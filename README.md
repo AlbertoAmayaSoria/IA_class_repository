@@ -1,1 +1,2 @@
-# Bienvenido
+# IA class notes
+
