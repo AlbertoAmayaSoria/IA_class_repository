@@ -2,18 +2,29 @@
 
 ## Agentes de IA
 
-### Existen diferentes tipos de agentes, desde agentes basados en un sistema de reglas predefinidas hasta agentes impulsados por LLM, los cuales aprenden, se adaptan y mejoran con el tiempo.
-### Estos se clasifican en función de su nivel de "inteligencia", proceso de toma de decisiones y cómo interactian con su entorno para alcanzar resultados deseados.
-### Diferentes tipos de agentes:
+Existen diferentes tipos de agentes, desde agentes basados en un sistema de reglas predefinidas hasta agentes impulsados por LLM, los cuales aprenden, se adaptan y mejoran con el tiempo.
+Estos se clasifican en función de su nivel de "inteligencia", proceso de toma de decisiones y cómo interactian con su entorno para alcanzar resultados deseados.
+Diferentes tipos de agentes:
 
-## Agentes según sus caracteristicas:
-### Determinista, estático, observable, discreto
+Agentes según sus caracteristicas:
+- Determinista, estático, observable, discreto
     - S = f(a)
     - S = (s<sub>1</sub>, ..., s<sub>n</n>) ∈ D<sub>1</sub> * ... * D<sub>n</sub> = S
     - a∈A, a∈A(s) acciones legales en s.
     - Dado un conjunto de reglas predefinidas (reglas de condición-acción), toma decisiones sin considerar experiencias pasadas o consecuencias futuras.
  
+- Determinista, dinámico, observable, discreto
+    - S<sub>k+1</sub> = f(S<sub>k</sub>, a<sub>k</sub>)
+    - En este tipo de agente, el entorno va cambiando, por lo cual, se necesita la noción del estado en el que se encuentra y la acción que se realizo para poder llegar a un nuevo estado.
 
+- Determinista, dinámico, parcialmente observable, discreto
+    - S<sub>k+1</sub> = f(S<sub>k</sub>, a<sub>k</sub>)
+    - P<sub>k</sub> = g(S<sub>k</sub>)
+    - En este tipo de agebte, es necesario mantener un modelo interno del estado del entorno, ya que el estado real no es completamente observable. El agente utiliza el estado previo, la acción realizada y la percepción actual para estimar el nuevo estado y así poder tomar decisiones correctas.
+
+- Determinista, dinámico, observable / parcialmente observable, continuo.
+    - 
+    - 
 
 <!--- Agentes reflejo simple
     - Este tipo de agente debe ser completamente observable.
