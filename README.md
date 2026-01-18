@@ -9,3 +9,6 @@ Existen 5 tipos principales de agentes:
 - Agentes reflejo simple
     - Determinista, estatico, observable, discreto.
     - Dado un conjunto de reglas predefinidas (reglas de condición-acción), toma decisiones sin considerar experiencias pasadas o consecuencias futuras.
+    - S = f(a)
+    - a \in A, a \in A(s) acciones legales en s.
+
