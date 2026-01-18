@@ -3,13 +3,14 @@
 ## Agentes de IA
 
 Existen diferentes tipos de agentes, desde agentes basados en un sistema de reglas predefinidas hasta agentes impulsados por LLM, los cuales aprenden, se adaptan y mejoran con el tiempo.
-Estos se clasifican en función de su nivel de "inteligencia", proceso de toma de decisiones y cómo interactian con su entorno para alcanzar resultados deseados.
+Estos se clasifican en función de su nivel de "inteligencia", proceso de toma de decisiones y cómo interactuan con su entorno para alcanzar resultados deseados.
+
 Diferentes tipos de agentes:
 
 Agentes según sus caracteristicas:
 - Determinista, estático, observable, discreto
     - S = f(a)
-    - S = (s<sub>1</sub>, ..., s<sub>n</n>) ∈ D<sub>1</sub> * ... * D<sub>n</sub> = S
+    - S = (s<sub>1</sub>, ..., s<sub>n</n>) ∈ D<sub>1</sub> x ... x D<sub>n</sub> = S
     - a∈A, a∈A(s) acciones legales en s.
     - Dado un conjunto de reglas predefinidas (reglas de condición-acción), toma decisiones sin considerar experiencias pasadas o consecuencias futuras.
  
@@ -23,8 +24,19 @@ Agentes según sus caracteristicas:
     - En este tipo de agebte, es necesario mantener un modelo interno del estado del entorno, ya que el estado real no es completamente observable. El agente utiliza el estado previo, la acción realizada y la percepción actual para estimar el nuevo estado y así poder tomar decisiones correctas.
 
 - Determinista, dinámico, observable / parcialmente observable, continuo.
-    - 
-    - 
+    - ẋ<sub>t</sub> = f(x<sub>t</sub>, a<sub>t</sub>)
+    - P<sub>t</sub> = g(x<sub>t</sub>)
+    - En este tipo de agente, al tener un entorno dinámico y continuo que esta en constante cambio con respecto al tiempo, se modela mediante ecuaciones diferenciales, cuando el entorno es parcialmente observable, el agente recibe percepciones como funciones del estado real, por lo que debe mantener y actualizar una estimación del estado interno para seleccionar acciones que permitan alcanzar objetivos o maximizar una función de utilidad.
+
+- Estocástico, discreto, estático, observable
+$$
+A =
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6
+\end{pmatrix}
+$$
+
 
 <!--- Agentes reflejo simple
     - Este tipo de agente debe ser completamente observable.
