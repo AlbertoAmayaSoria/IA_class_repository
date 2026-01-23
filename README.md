@@ -38,7 +38,10 @@ A =
 $$
 
 
-<!--- Agentes reflejo simple
+
+<!--- 
+    prueba
+    Agentes reflejo simple
     - Este tipo de agente debe ser completamente observable.
         - Determinista, estatico, observable, discreto.
         - S = f(a)
